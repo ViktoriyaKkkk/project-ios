@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="HeaderView" customModule="project_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="avapic" translatesAutoresizingMaskIntoConstraints="NO" id="wZf-80-6gB">
+                    <rect key="frame" x="25" y="0.0" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="BnM-go-6GR"/>
+                        <constraint firstAttribute="width" constant="70" id="XHV-s1-4YW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Иван Иванов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfN-R7-pCc">
+                    <rect key="frame" x="110" y="0.0" width="108" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Онлайн" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-ga-DrI">
+                    <rect key="frame" x="110" y="29" width="52" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wZf-80-6gB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="1qU-sF-KDf"/>
+                <constraint firstItem="wZf-80-6gB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="7ZL-5u-fMG"/>
+                <constraint firstItem="HfN-R7-pCc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="D7K-Gb-Zot"/>
+                <constraint firstItem="RyU-ga-DrI" firstAttribute="top" secondItem="HfN-R7-pCc" secondAttribute="bottom" constant="20" id="JEE-E0-CuK"/>
+                <constraint firstItem="HfN-R7-pCc" firstAttribute="leading" secondItem="wZf-80-6gB" secondAttribute="trailing" constant="20" id="RA1-K2-gav"/>
+                <constraint firstItem="RyU-ga-DrI" firstAttribute="leading" secondItem="wZf-80-6gB" secondAttribute="trailing" constant="20" id="VL5-JX-nQQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.399999999999999" y="342.72863568215894"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avapic" width="1024" height="1024"/>
+    </resources>
+</document>
