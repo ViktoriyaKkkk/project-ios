@@ -12,6 +12,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var table: UITableView!
     var posts: [Post] = []
+    var article: Post!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,4 +48,20 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.postImage.image = posts[indexPath.row].image
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is OneNewViewController {
+            let dest = segue.destination as? OneNewViewController
+            dest?.article = self.article
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        article = posts[tableView.indexPathForSelectedRow!.row]
+        performSegue(withIdentifier: "goToOneNew", sender: self)
+        tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
+    }
+    
+    
+    
 }
